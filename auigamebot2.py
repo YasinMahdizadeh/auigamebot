@@ -64,8 +64,6 @@ while (True):
     if new_updates:
         for update in new_updates:
             print("1")
-            if update_type(update) == 'callback_query':
-                print("2")
-                if update.callback_query.data == "user joined":
-                    print("hey!")
-                    cb = CallbackQueryHandler(user_joined, pass_user_data = True, pass_chat_data = True)
+            if update.message.text == "/start test":
+                print("hey!")
+                print(update.message.chat.id, update.message.chat.username)

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d85c908f-6e56-4a20-bbf2-a60fc98b5645" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auigamebot2.py" beforeDir="false" afterPath="$PROJECT_DIR$/auigamebot2.py" afterDir="false" />
     </list>
@@ -45,13 +44,25 @@
       <option name="presentableId" value="Default" />
       <updated>1584964193317</updated>
     </task>
+    <task id="LOCAL-00001" summary="2">
+      <created>1585835739606</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585835739606</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2" />
+    <option name="LAST_COMMIT_MESSAGE" value="2" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="27" width="782" height="741" key="CommitChangelistDialog2" timestamp="1585833179938">
+    <state x="320" y="27" width="782" height="741" key="CommitChangelistDialog2" timestamp="1585835738544">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="320" y="27" width="782" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1585833179938" />
+    <state x="320" y="27" width="782" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1585835738544" />
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1585030095853">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

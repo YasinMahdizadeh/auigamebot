@@ -1,5 +1,6 @@
 import telegram
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup
+from telegram.ext import CallbackQueryHandler
 import time
 token = '1037836554:AAEhuWo_Ix10EpAJ-hnEVuIpdb-QXC_6-cw'
 group_id = -384730643
@@ -21,10 +22,6 @@ def update_type(update):
     if update.poll: return "poll"
     if update.poll_answer: return "poll_answer"
 
-def remove_markup(id):
-    reply_markup = telegram.ReplyKeyboardRemove()
-    bot.send_message(chat_id=id, text="Reply Removed", reply_markup=reply_markup)
-
 def get_new_updates(id):
     updates = bot.get_updates()
     new_updates = []
@@ -43,20 +40,32 @@ def max_update_id(updates):
     else:
         return 0
 
-keyboard = [[InlineKeyboardButton("Join Game!", callback_data='user joined')]]
+def user_joined(update, context):
+    print("Heey")
+    print(update)
+    print(context)
+
+
+
+keyboard = [[InlineKeyboardButton("Join Game!", callback_data='user joined', url='https://t.me/auigamebot?start=test')]]
 reply_markup = InlineKeyboardMarkup(keyboard)
 bot.send_message(chat_id= group_id, text="روی دکمه زیر کلیک کنید تا وارد بازی شوید!", reply_markup=reply_markup)
 
 last_update_id = 0
 while (True):
-    # keyboard = [['1','2'],'3']
-    #remove_markup(yasin_id)
+
     time.sleep(3.2)
     updates = bot.get_updates()
     new_updates = get_new_updates(last_update_id)
-
-
-    #new_updates = get_new_updates()
-    print("$$$.upda =  ",[u for u in updates], [update_type(u) for u in updates], "\n")
-    print("!!!newones = ",[u for u in new_updates],"\n\n")
     last_update_id = max_update_id(updates)
+
+    print("newones= ",[u for u in new_updates],"\n\n")
+
+    if new_updates:
+        for update in new_updates:
+            print("1")
+            if update_type(update) == 'callback_query':
+                print("2")
+                if update.callback_query.data == "user joined":
+                    print("hey!")
+                    cb = CallbackQueryHandler(user_joined, pass_user_data = True, pass_chat_data = True)

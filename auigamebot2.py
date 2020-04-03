@@ -6,7 +6,7 @@ token = '1037836554:AAEhuWo_Ix10EpAJ-hnEVuIpdb-QXC_6-cw'
 group_id = -384730643
 yasin_id =  320435181
 is_game_running = False
-players = []
+players = set()
 #https://api.telegram.org/bot1037836554:AAEhuWo_Ix10EpAJ-hnEVuIpdb-QXC_6-cw/getupdates
 
 bot = telegram.Bot(token)
@@ -48,9 +48,10 @@ def start_game():
     bot.send_message(chat_id= group_id, text=text, reply_markup=reply_markup)
 
 def print_players_list():
-    print(len(players), "بازیکن" )
+    text = '{} بازیکن'.format(len(players))
     for player in players:
-        print(player[0])
+        text = text + '\n{}'.format(player[1])
+    bot.send_message(chat_id=group_id, text=text)
 
 updates = bot.get_updates()
 last_update_id = max_update_id(updates)
@@ -75,5 +76,5 @@ while (True):
                     bot.send_message(chat_id=group_id, text="بازی در حال اجراست!")
 
         if update.message.text == "/start test":
-            players.append((update.message.chat.id, update.message.chat.username))
+            players.add((update.message.chat.id, update.message.chat.username))
             print_players_list()

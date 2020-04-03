@@ -100,7 +100,28 @@
       <option name="project" value="LOCAL" />
       <updated>1585906837664</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="don't show me previous updates!!">
+      <created>1585907083517</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585907083517</updated>
+    </task>
+    <task id="LOCAL-00006" summary="???">
+      <created>1585907097095</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585907097095</updated>
+    </task>
+    <task id="LOCAL-00007" summary="???">
+      <created>1585907105414</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585907105414</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -108,13 +129,15 @@
     <MESSAGE value="First tries for adding player list" />
     <MESSAGE value="/start@auigamebot added" />
     <MESSAGE value="Print players list + cleaning up while(true)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Print players list + cleaning up while(true)" />
+    <MESSAGE value="don't show me previous updates!!" />
+    <MESSAGE value="???" />
+    <option name="LAST_COMMIT_MESSAGE" value="???" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="27" width="782" height="741" key="CommitChangelistDialog2" timestamp="1585907096909">
+    <state x="320" y="27" width="782" height="741" key="CommitChangelistDialog2" timestamp="1585907105283">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="320" y="27" width="782" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1585907096909" />
+    <state x="320" y="27" width="782" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1585907105283" />
     <state width="707" height="540" key="DebuggerActiveHint" timestamp="1585905771756">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

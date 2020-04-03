@@ -31,7 +31,35 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/RoboSelf" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RoboSelf" />
+  </component>
+  <component name="RunManager">
+    <configuration name="auigamebot2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="auigamebot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auigamebot2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.auigamebot2" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -51,26 +79,86 @@
       <option name="project" value="LOCAL" />
       <updated>1585835739606</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First tries for adding player list">
+      <created>1585837229814</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585837229814</updated>
+    </task>
+    <task id="LOCAL-00003" summary="/start@auigamebot added">
+      <created>1585905921225</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585905921225</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Print players list + cleaning up while(true)">
+      <created>1585906837664</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585906837664</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2" />
+    <MESSAGE value="First tries for adding player list" />
+    <MESSAGE value="/start@auigamebot added" />
+    <MESSAGE value="Print players list + cleaning up while(true)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Print players list + cleaning up while(true)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="27" width="782" height="741" key="CommitChangelistDialog2" timestamp="1585835738544">
+    <state x="320" y="27" width="782" height="741" key="CommitChangelistDialog2" timestamp="1585907083164">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="320" y="27" width="782" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1585835738544" />
+    <state x="320" y="27" width="782" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1585907083164" />
+    <state width="707" height="540" key="DebuggerActiveHint" timestamp="1585905771756">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="707" height="540" key="DebuggerActiveHint/67.27.1299.741@67.27.1299.741" timestamp="1585905771756" />
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1585030095853">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1585030095853" />
-    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1585833385968">
+    <state width="1276" height="219" key="GridCell.Tab.0.bottom" timestamp="1585905774711">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1585833385968" />
+    <state width="1276" height="219" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1585905774711" />
+    <state width="1276" height="219" key="GridCell.Tab.0.center" timestamp="1585905774711">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1276" height="219" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1585905774711" />
+    <state width="1276" height="219" key="GridCell.Tab.0.left" timestamp="1585905774710">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1276" height="219" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1585905774710" />
+    <state width="1276" height="219" key="GridCell.Tab.0.right" timestamp="1585905774711">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1276" height="219" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1585905774711" />
+    <state width="1276" height="219" key="GridCell.Tab.1.bottom" timestamp="1585905774713">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1276" height="219" key="GridCell.Tab.1.bottom/67.27.1299.741@67.27.1299.741" timestamp="1585905774713" />
+    <state width="1276" height="219" key="GridCell.Tab.1.center" timestamp="1585905774712">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1276" height="219" key="GridCell.Tab.1.center/67.27.1299.741@67.27.1299.741" timestamp="1585905774712" />
+    <state width="1276" height="219" key="GridCell.Tab.1.left" timestamp="1585905774712">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1276" height="219" key="GridCell.Tab.1.left/67.27.1299.741@67.27.1299.741" timestamp="1585905774712" />
+    <state width="1276" height="219" key="GridCell.Tab.1.right" timestamp="1585905774713">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1276" height="219" key="GridCell.Tab.1.right/67.27.1299.741@67.27.1299.741" timestamp="1585905774713" />
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1585904651809">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1585904651809" />
     <state x="484" y="316" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585833171548">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

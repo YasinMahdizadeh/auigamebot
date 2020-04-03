@@ -121,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585907105414</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="players type changed to set.&#10;bot.send_message(players) added.">
+      <created>1585907730851</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1585907730851</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -131,13 +138,14 @@
     <MESSAGE value="Print players list + cleaning up while(true)" />
     <MESSAGE value="don't show me previous updates!!" />
     <MESSAGE value="???" />
-    <option name="LAST_COMMIT_MESSAGE" value="???" />
+    <MESSAGE value="players type changed to set.&#10;bot.send_message(players) added." />
+    <option name="LAST_COMMIT_MESSAGE" value="players type changed to set.&#10;bot.send_message(players) added." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="27" width="782" height="741" key="CommitChangelistDialog2" timestamp="1585907105283">
+    <state x="320" y="27" width="782" height="741" key="CommitChangelistDialog2" timestamp="1585907730666">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="320" y="27" width="782" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1585907105283" />
+    <state x="320" y="27" width="782" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1585907730666" />
     <state width="707" height="540" key="DebuggerActiveHint" timestamp="1585905771756">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

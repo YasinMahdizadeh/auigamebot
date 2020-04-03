@@ -50,7 +50,7 @@ def start_game():
 def print_players_list():
     text = '{} بازیکن'.format(len(players))
     for player in players:
-        text = text + '\n{}'.format(player[1])
+        text = text + '\n@{}'.format(player[1])
     bot.send_message(chat_id=group_id, text=text)
 
 updates = bot.get_updates()
@@ -74,6 +74,8 @@ while (True):
                     is_game_running = True
                 else:
                     bot.send_message(chat_id=group_id, text="بازی در حال اجراست!")
+            if update.message.text == '/players@auigamebot':
+                print_players_list()
 
         if update.message.text == "/start test":
             players.add((update.message.chat.id, update.message.chat.username))

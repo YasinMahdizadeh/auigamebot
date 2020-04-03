@@ -5,6 +5,7 @@ import time
 token = '1037836554:AAEhuWo_Ix10EpAJ-hnEVuIpdb-QXC_6-cw'
 group_id = -384730643
 yasin_id =  320435181
+is_game_running = False
 
 # https://api.telegram.org/bot1037836554:AAEhuWo_Ix10EpAJ-hnEVuIpdb-QXC_6-cw/getupdates
 
@@ -40,16 +41,10 @@ def max_update_id(updates):
     else:
         return 0
 
-def user_joined(update, context):
-    print("Heey")
-    print(update)
-    print(context)
-
-
-
-keyboard = [[InlineKeyboardButton("Join Game!", callback_data='user joined', url='https://t.me/auigamebot?start=test')]]
-reply_markup = InlineKeyboardMarkup(keyboard)
-bot.send_message(chat_id= group_id, text="روی دکمه زیر کلیک کنید تا وارد بازی شوید!", reply_markup=reply_markup)
+def start_game():
+    keyboard = [[InlineKeyboardButton("Join Game!", callback_data='user joined', url='https://t.me/auigamebot?start=test')]]
+    reply_markup = InlineKeyboardMarkup(keyboard)
+    bot.send_message(chat_id= group_id, text="روی دکمه زیر کلیک کنید تا وارد بازی شوید!", reply_markup=reply_markup)
 
 last_update_id = 0
 while (True):
@@ -58,12 +53,21 @@ while (True):
     updates = bot.get_updates()
     new_updates = get_new_updates(last_update_id)
     last_update_id = max_update_id(updates)
+    # print("newones= ",[u for u in new_updates],"\n\n")
 
-    print("newones= ",[u for u in new_updates],"\n\n")
+    #############################################
+
 
     if new_updates:
         for update in new_updates:
-            print("1")
+            if update.message.text == '/start@auigamebot' and \
+                    update.message.chat.id == group_id:
+                if not is_game_running:
+                    start_game()
+                    is_game_running = True
+                else:
+                    bot.send_message(chat_id=group_id, text="بازی در حال اجراست!")
+
             if update.message.text == "/start test":
                 print("hey!")
                 print(update.message.chat.id, update.message.chat.username)

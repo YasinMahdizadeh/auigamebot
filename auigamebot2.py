@@ -52,7 +52,9 @@ def print_players_list():
     for player in players:
         print(player[0])
 
-last_update_id = 0
+updates = bot.get_updates()
+last_update_id = max_update_id(updates)
+
 while (True):
 
     time.sleep(3.2)
